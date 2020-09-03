@@ -92,11 +92,10 @@ nav {
 }
 
 #main-articles {
-  padding: 2px 3px;
-  margin: 1px;
   display: flex;
   justify-content: space-around;
   height: 60vh;
+  margin: 2px 0px;
 }
 
 #main-article {
@@ -110,12 +109,13 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1px;
+  height: 60vh;
 }
 
 #secondary-articles article {
-  height: 29vh;
+  height: 49%;
 }
+
 
 #top-right-article {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/tnw2020-empty_feature_img.jpg");
@@ -140,7 +140,7 @@ nav {
 #latest-news article {
   margin: 10px 0px;
   width: 24%;
-  height: 200px;
+  height: 170px;
   background-color: lightblue;
 }
 
@@ -152,6 +152,7 @@ nav {
 #latest-news-p {
 
   margin: 50px 10px;
+  margin-bottom: 10px;
   font-size: 32px;
   color: red;
   font-weight: bold;
@@ -161,8 +162,42 @@ nav {
 
 #art1 {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Whatsapp-bug-warning-511x270.jpg");
+  background-size: cover;
 }
 
+#art2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/us-cargurus-ride-hail-uber-lyft-taxi-new-york-car-pickup-dropoff-crash-danger-car-479x270.png");
+  background-size: cover;
+}
+#art3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/zuckerberg-blockchain-498x270.png");
+  background-size: cover;
+}
+
+#art4 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-2020-09-03T133902.980-516x270.png");
+  background-size: cover;
+}
+
+#art5 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/TNW-RapidWeaver-540x270.jpg");
+  background-size: cover;
+}
+
+#art6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/TonyHawksProSkater1-2_RevealScreenshot_General-01-480x270.jpg");
+  background-size: cover;
+}
+
+#art7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/MessengerRooms_FB-News-Feed_Colored-428x270.jpg");background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/MessengerRooms_FB-News-Feed_Colored-428x270.jpg");
+  background-size: cover;
+}
+
+#art8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/buffbezos-480x270.jpg");
+  background-size: cover;
+}
 
 @media only screen and (max-width: 768px) {
   .d-none-768 {
@@ -210,6 +245,7 @@ nav {
   #main-articles {
     display: inline-block;
     width: 100%;
+    height: auto;
   }
 
   #main-articles article {
