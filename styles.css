@@ -93,10 +93,10 @@ nav {
 
 #main-articles {
   padding: 2px 3px;
+  margin: 1px;
   display: flex;
   justify-content: space-around;
-  height: 275px;
-  margin-bottom: 60px;
+  height: 60vh;
 }
 
 #main-article {
@@ -110,10 +110,11 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 1px;
 }
 
 #secondary-articles article {
-  height: 135px;
+  height: 29vh;
 }
 
 #top-right-article {
@@ -132,6 +133,7 @@ nav {
   align-items: center;
   background-color: white;
   flex-wrap: wrap;
+
 }
 
 
@@ -145,6 +147,15 @@ nav {
 
 #latest-news > :last-child {
   background-color: white;
+}
+
+#latest-news-p {
+
+  margin: 50px 10px;
+  font-size: 32px;
+  color: red;
+  font-weight: bold;
+  display: inline-block;
 }
 
 
@@ -214,11 +225,13 @@ nav {
   #secondary-articles {
     display: block;
     width: 100%;
+    
   }
 
-  
-
 }
+
+
+
 
 @media only screen and (max-width: 1214px) {
 
