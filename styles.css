@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .d-flex {
   display: flex;
@@ -98,11 +102,43 @@ nav {
   margin: 2px 0px;
 }
 
+
+#main-articles a {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+#main-articles small {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+#main-articles section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.05) url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
+}
+
 #main-article {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Super-Mario-3D-All-Stars-796x417.jpg");
   background-size: cover;
   width: 64%;
 }
+
+.cover-trigger {
+  background: rgba(0,0,0,.25) url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
+}
+
 
 #secondary-articles {
   width: 34%;
@@ -110,6 +146,10 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   height: 60vh;
+}
+
+#secondary-articles a {
+  font-size: 24px;
 }
 
 #secondary-articles article {
@@ -130,24 +170,28 @@ nav {
 #latest-news {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /*align-items: center;*/
   background-color: white;
   flex-wrap: wrap;
 
 }
 
+#latest-news div {
+  width: 24%;
+}
 
 #latest-news article {
   margin: 10px 0px;
-  width: 24%;
+  width: 100%;
   height: 170px;
-  background-color: lightblue;
 }
-
 
 #latest-news > :last-child {
-  background-color: white;
+  
 }
+
+
+
 
 #latest-news-p {
 
@@ -158,6 +202,17 @@ nav {
   font-weight: bold;
   display: inline-block;
 }
+
+#latest-news h5 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+small {
+  color: gray;
+}
+
+
 
 
 #art1 {
@@ -197,6 +252,18 @@ nav {
 #art8 {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/buffbezos-480x270.jpg");
   background-size: cover;
+}
+
+@media only screen and (max-width: 1114px) {
+
+  .d-none-1114 {
+    display: none;
+  }
+
+  #latest-news div {
+    width: 32%;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -261,7 +328,31 @@ nav {
   #secondary-articles {
     display: block;
     width: 100%;
+  }
+
+  #latest-news {
+    display: block;
+    margin-left: 15px;
+  }
+
+  #latest-news div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #latest-news article {
     
+    float: left;
+    width: 80px;
+    height: 70px;
+  }
+
+  #latest-news section {
+    margin-left: 15px;
+  }
+
+  #latest-news section h5 {
+    font-size: 16px;
   }
 
 }
@@ -276,14 +367,3 @@ nav {
   }
 }
 
-@media only screen and (max-width: 1114px) {
-
-  .d-none-1114 {
-    display: none;
-  }
-
-  #latest-news article {
-    width: 32%;
-  }
-
-}
