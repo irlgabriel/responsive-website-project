@@ -7,9 +7,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/59f6efb51c.js" crossorigin="anonymous"></script>
   </head>
   <body>  
-    <header class="d-flex">
+    <header class="d-none-768">
       <section id="header-left">
         <a id="news" href="">News</a>
         <a href="">Events</a>
@@ -29,19 +30,32 @@
 
     <nav>
       <div id="actual-navbar" class="d-flex">
-        <section id="nav-left">
+        <section class="d-none-768" id="nav-left">
           <a href="">LATEST</a>
           <a href="">HARD FORK</a>
           <a href="">PLUGGED</a>
           <a href="">README</a>
           <a href="">GROWTH QUARTERS</a>
+          <a class="d-none-1214" href="">SHIFT</a>
+          <a class="d-none-1214" href="">NEURAL</a>
         </section>
 
-        <section id="nav-right">
-          <!-- fa-search icon here -->
-          <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/event-bl-tnw2020.svg" width="125" height="52">
-          <!-- countdount thing here -->
-          <button id="get-tickets">GET TICKETS</button>
+        <section class="d-none-1114" id="nav-right">
+          <div id="search-div">
+            <i class="fas fa-search"></i>
+            
+          </div>
+
+          <!-- hamburger menu -->
+          <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+            <img class="d-none-768" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/event-bl-tnw2020.svg" width="125" height="52">
+          <!-- countdown thing here -->
+          <button class="d-none-768" id="get-tickets">GET TICKETS</button>
         </section>
       </div>
       <!-- yellow thing part of navbar -->
@@ -49,6 +63,27 @@
         <a href="">Join TNW2020, our 15th anual flagship event. Online. Get tickets -></a>
       </section>
     </nav>
+
+    <div id="main-articles">
+      <article id="main-article"></article>
+      <div id="secondary-articles">
+        <article id="top-right-article"></article>
+        <article id="bot-right-article"></article>
+      </div>
+    </div>
+
+    <div id="latest-news">
+      <article id="art1"></article>
+      <article id="art2"></article>
+      <article id="art3"></article>
+      <article id="art4"></article>
+      <article id="art5"></article>
+      <article id="art6"></article>
+      <article id="art7"></article>
+      <article id="art8"></article>
+      <!-- just for space-around thing -->
+      <article></article>
+    </div>
 
   </body>
 </html>

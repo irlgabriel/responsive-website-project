@@ -4,9 +4,9 @@
   padding: 0;
 }
 
+
 .d-flex {
   display: flex;
-
 }
 
 header {
@@ -14,6 +14,7 @@ header {
   justify-content: space-around;
   align-content: center;
   background-color: black;
+  display: flex;
 }
 
 header a {
@@ -41,14 +42,8 @@ nav {
   justify-content: space-between;
 }
 
-#nav-right {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 30%;
-  border-left: 1px solid rgb(211, 211, 211);
-}
+
+
 
 #actual-navbar a {
   text-decoration: none;
@@ -57,6 +52,21 @@ nav {
   font-size: 16px;
   word-spacing: 0.1em;
 }
+
+#nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  border-left: 1px solid rgb(211, 211, 211);
+  padding-left: 30px;
+}
+
+#nav-left a {
+  font-size: 14px;
+}
+
 
 #actual-navbar a:hover {
   color: black;
@@ -71,5 +81,160 @@ nav {
   font-size: 14px;
 }
 
+#get-tickets {
+  padding: 9px 12px;
+  background-color: lightskyblue;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  font-size: 10px;
+}
+
+#main-articles {
+  padding: 2px 3px;
+  display: flex;
+  justify-content: space-around;
+  height: 275px;
+  margin-bottom: 60px;
+}
+
+#main-article {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Super-Mario-3D-All-Stars-796x417.jpg");
+  background-size: cover;
+  width: 64%;
+}
+
+#secondary-articles {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#secondary-articles article {
+  height: 135px;
+}
+
+#top-right-article {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/tnw2020-empty_feature_img.jpg");
+  background-size: cover;
+}
+
+#bot-right-article {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/boris-future-gq-796x417.png");
+  background-size: cover;
+}
+
+#latest-news {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  flex-wrap: wrap;
+}
 
 
+#latest-news article {
+  margin: 10px 0px;
+  width: 24%;
+  height: 200px;
+  background-color: lightblue;
+}
+
+
+#latest-news > :last-child {
+  background-color: white;
+}
+
+
+#art1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Whatsapp-bug-warning-511x270.jpg");
+}
+
+
+@media only screen and (max-width: 768px) {
+  .d-none-768 {
+    display: none;
+  }
+  
+  #actual-navbar {
+    height: 45px;
+  }
+
+  #search-div {
+    height: 45px;
+
+  }
+
+  #search-div i {
+    margin-top: 15px;
+  }
+
+  #nav-right {
+    width: 20%;
+    padding: 0px;
+    justify-content: space-around;
+  }
+
+  #hamburger {
+    height: 45px;
+    border-left: 1px solid rgb(211, 211, 211);
+    padding-top: 12px;
+    padding-left: 25px;
+  }
+
+  #hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: red;
+    margin: 3px 0;
+  }
+
+  #yellow-nav {
+    padding: 25px 0px;
+    text-align: center;
+  }
+
+  #main-articles {
+    display: inline-block;
+    width: 100%;
+  }
+
+  #main-articles article {
+    width: 100%;
+    height: 27vh;
+    margin-bottom: 5px;
+  }
+
+  #main-article {
+    width: 100%;
+  }
+
+  #secondary-articles {
+    display: block;
+    width: 100%;
+  }
+
+  
+
+}
+
+@media only screen and (max-width: 1214px) {
+
+  .d-none-1214 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1114px) {
+
+  .d-none-1114 {
+    display: none;
+  }
+
+  #latest-news article {
+    width: 32%;
+  }
+
+}
