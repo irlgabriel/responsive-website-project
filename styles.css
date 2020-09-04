@@ -475,6 +475,58 @@ hr {
   font-size: 28px;
   font-weight: bold;
 }
+
+footer {
+  position: relative;
+  background-color: black;
+  color: white;
+  height: 250px;
+}
+
+#footer-contact {
+  text-transform: uppercase;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#footer-contact a {
+  color: white;
+  margin: 0px 5px;
+  font-size: 14px;
+}
+
+#fa-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#fa-icons i {
+  margin: 0px 5px;
+  padding: 7px;
+  font-size: 20px;
+  background-color: rgb(92, 92, 92);
+  border-radius: 50%;
+  color: white;
+}
+
+#footer-bottom a {
+  color: white;
+  font-size: 14px;
+}
+
+#footer-bottom {
+  position: absolute;
+  bottom: 25px;
+  width: 40%;
+  left: 50%;
+  margin-left: -20%;
+}
+
 @media only screen and (max-width: 1214px) {
 
   .d-none-1214 {
