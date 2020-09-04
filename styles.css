@@ -45,6 +45,8 @@ header a:hover {
 
 nav {
   position: sticky;
+  top: 0px;
+  z-index: 21;
 }
 
 #actual-navbar {
@@ -52,6 +54,8 @@ nav {
   padding-right: 7px;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+  z-index: 20;
 }
 
 
